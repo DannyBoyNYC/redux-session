@@ -1,8 +1,10 @@
 import React from 'react';
 
-const UserStats = () => (
+import UserAvatar from './UserAvatar'
+
+const UserStats = ({user}) => (
   <div className="UserStats">
-    UserStats
+    <UserAvatar />
   </div>
 );
 

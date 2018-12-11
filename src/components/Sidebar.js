@@ -2,9 +2,9 @@ import React from 'react';
 
 import UserStats from './UserStats'
 
-const Sidebar = () => (
+const Sidebar = ({user}) => (
   <div className="sidebar">
-    <UserStats />
+    <UserStats user={user} />
   </div>
 );
 

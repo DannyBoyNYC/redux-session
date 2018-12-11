@@ -2,9 +2,9 @@ import React from 'react';
 
 import UserAvatar from './UserAvatar'
 
-const Nav = () => (
+const Nav = ({user}) => (
   <div className="nav">
-    <UserAvatar />
+    <UserAvatar user={user} />
   </div>
 );
 
