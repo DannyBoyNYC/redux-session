@@ -4,7 +4,7 @@ import UserAvatar from './UserAvatar'
 
 const UserStats = ({user}) => (
   <div className="UserStats">
-    <UserAvatar />
+    <UserAvatar user={user} />
   </div>
 );
 
