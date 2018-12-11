@@ -1,9 +1,11 @@
 import React from 'react';
 
-const UserAvatar = () => (
-  <div className="UserAvatar">
-    User Avatar
-  </div>
+const UserAvatar = ({ user, size }) => (
+  <img
+    className={`user-avatar ${size || ""}`}
+    alt="user avatar"
+    src={user.avatar}
+  />
 );
 
 export default UserAvatar
