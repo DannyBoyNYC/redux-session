@@ -20,7 +20,7 @@ class App extends Component {
     const { user } = this.state;
 
     return (
-      <div className="App">
+      <div className="app">
         <Nav user={user} />
         <Body user={user} />
       </div>
