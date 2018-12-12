@@ -1,11 +1,21 @@
 import React from 'react';
+import { connect } from "react-redux";
 
 import UserAvatar from './UserAvatar'
 
-const UserStats = ({ user }) => (
+// This mapStateToProps function extracts a single
+// key from state (user) and passes it as the `user` prop
+const mapStateToProps = state => ({
+  user: state.user
+});
+
+// connect() UserStats so it receives the `user` directly,
+// without having to receive it from a component above
+// (both use the same mapStateToProps function)
+const UserStats = connect(mapStateToProps)(({ user }) => (
   <div className="user-stats">
     <div>
-      <UserAvatar user={user} />
+      <UserAvatar />
       {user.name}
     </div>
     <div className="stats">
@@ -13,6 +23,6 @@ const UserStats = ({ user }) => (
       <div>Following {user.following}</div>
     </div>
   </div>
-);
+));
 
 export default UserStats

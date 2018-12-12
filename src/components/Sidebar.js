@@ -2,9 +2,10 @@ import React from 'react';
 
 import UserStats from './UserStats'
 
-const Sidebar = ({user}) => (
+// Sidebar doesn't need to know about `user` anymore
+const Sidebar = () => (
   <div className="sidebar">
-    <UserStats user={user} />
+    <UserStats />
   </div>
 );
 

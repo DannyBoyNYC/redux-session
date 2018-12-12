@@ -3,9 +3,10 @@ import React from 'react';
 import Sidebar from './Sidebar'
 import Content from './Content'
 
-const Body = ({user}) => (
+// Body doesn't need to know about `user` anymore
+const Body = () => (
   <div className="body">
-    <Sidebar user={user} />
+    <Sidebar />
     <Content />
   </div>
 );

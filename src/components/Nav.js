@@ -2,9 +2,10 @@ import React from 'react';
 
 import UserAvatar from './UserAvatar'
 
-const Nav = ({ user }) => (
+// Nav doesn't need to know about `user` anymore
+const Nav = () => (
   <div className="nav">
-    <UserAvatar user={user} size="small" />
+    <UserAvatar size="small" />
   </div>
 );
 

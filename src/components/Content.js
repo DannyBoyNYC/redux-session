@@ -1,9 +1,7 @@
 import React from 'react';
 
 const Content = () => (
-  <div className="content">
-    Content: prop drilling for fun and profit
-  </div>
+  <div className="content">redux content here</div>
 );
 
 export default Content
