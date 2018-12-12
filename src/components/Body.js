@@ -11,3 +11,4 @@ const Body = ({user}) => (
 );
 
 export default Body
+
